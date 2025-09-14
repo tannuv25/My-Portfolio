@@ -1,13 +1,11 @@
 "use client";
 
 import { motion } from "framer-motion";
-import Navbar from "./Navbar";
 
 export function HeroSectionOne() {
   return (
-    <div className="relative mx-auto my-10 flex max-w-7xl flex-col items-center justify-center px-4">
-      {/* Navbar */}
-      <Navbar />
+    <div className="relative mx-auto my-10 flex max-w-full flex-col items-center justify-center px-4">
+      
 
       {/* Decorative side + bottom borders */}
       <div className="absolute inset-y-0 left-0 hidden sm:block h-full w-px bg-neutral-200/80 dark:bg-neutral-800/80">
