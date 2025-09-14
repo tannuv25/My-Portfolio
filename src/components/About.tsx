@@ -17,7 +17,7 @@ export default function About() {
           className="bg-purple-50 rounded-2xl shadow-lg p-8 flex flex-col items-center text-center"
         >
           <img
-            src="../public/images/profile_pic.png"
+            src="/images/profile_pic.png"
             alt="Profile"
             className="w-40 h-40 rounded-full object-cover border-4 border-purple-500 mb-6"
           />

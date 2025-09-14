@@ -89,7 +89,7 @@ export function HeroSectionOne() {
         >
           <div className="w-full overflow-hidden rounded-xl border border-gray-200 bg-neutral-100 ">
             <img
-              src="../public/images/animated_pic.png"
+              src="/images/animated_pic.png"
               alt="Landing page preview"
               className="h-[400px] w-full object-cover"
               height={1000}
