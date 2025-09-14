@@ -10,13 +10,14 @@ export default function Footer() {
   ];
 
   return (
-    <footer className="w-full bg-purple-200 text-purple-700 py-10 px-6">
-      <div className="max-w-6xl">
+    <footer className="relative w-full bg-purple-200 text-purple-700 py-10 px-6 mt-o mb-0">
+      <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-10">
         {/* Branding */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
+          className="text-center md:text-left"
         >
           <h1 className="text-2xl font-bold">Tannu Verma Portfolio</h1>
           <p className="mt-2 text-purple-600">
@@ -29,12 +30,18 @@ export default function Footer() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.2, duration: 0.6 }}
-          className="flex flex-col gap-2"
+          className="flex flex-col items-center md:items-start gap-2"
         >
           <h2 className="text-lg font-semibold mb-2">Quick Links</h2>
-          <a href="#about" className="hover:text-purple-500 transition">About</a>
-          <a href="#projects" className="hover:text-purple-300 transition">Projects</a>
-          <a href="#contact" className="hover:text-purple-300 transition">Contact</a>
+          <a href="#about" className="hover:text-purple-500 transition">
+            About
+          </a>
+          <a href="#projects" className="hover:text-purple-500 transition">
+            Projects
+          </a>
+          <a href="#contact" className="hover:text-purple-500 transition">
+            Contact
+          </a>
         </motion.div>
 
         {/* Social Icons */}
@@ -42,7 +49,7 @@ export default function Footer() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.4, duration: 0.6 }}
-          className="flex flex-col items-start md:items-end gap-4"
+          className="flex flex-col items-center md:items-end gap-4"
         >
           <h2 className="text-lg font-semibold">Connect</h2>
           <div className="flex gap-4">
@@ -70,7 +77,7 @@ export default function Footer() {
         transition={{ delay: 0.6, duration: 0.6 }}
         className="mt-10 border-t border-purple-800/80 pt-4 text-center text-purple-700 text-sm"
       >
-        © {new Date().getFullYear()} I'm tannu verma. All rights reserved.
+        © {new Date().getFullYear()} I'm Tannu Verma. All rights reserved.
       </motion.div>
 
       {/* Animated Glow */}
