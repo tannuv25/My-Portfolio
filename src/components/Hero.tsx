@@ -1,6 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
 
 export function HeroSectionOne() {
   return (
@@ -20,7 +21,7 @@ export function HeroSectionOne() {
 
       {/* Hero Content */}
       <div className="px-2 py-10 md:py-20 text-center">
-        {/* Heading */}
+        {/* Heading
         <h1 className="relative z-10 mx-auto max-w-4xl text-balance text-2xl font-bold text-slate-700 sm:text-3xl md:text-5xl lg:text-7xl dark:text-slate-300">
           {"Hi, I’m Tannu Verma"
             .split(" ")
@@ -39,7 +40,43 @@ export function HeroSectionOne() {
                 {word}
               </motion.span>
             ))}
-        </h1>
+        </h1> */}
+        {/* Heading */}
+<h1 className="relative z-10 mx-auto max-w-4xl text-balance text-2xl font-bold text-slate-700 sm:text-3xl md:text-5xl lg:text-7xl dark:text-slate-300">
+  {"Hi, I’m Tannu Verma"
+    .split(" ")
+    .map((word, index) => (
+      <motion.span
+        key={index}
+        initial={{ opacity: 0, filter: "blur(4px)", y: 10 }}
+        animate={{ opacity: 1, filter: "blur(0px)", y: 0 }}
+        transition={{
+          duration: 0.3,
+          delay: index * 0.1,
+          ease: "easeInOut",
+        }}
+        className="mr-2 inline-block relative cursor-pointer text-slate-700 dark:text-slate-300
+                   hover:text-transparent hover:bg-gradient-to-r hover:from-purple-400 hover:via-pink-500 hover:to-purple-600
+                   hover:bg-clip-text hover:animate-shine transition-all duration-500"
+      >
+        {word}
+      </motion.span>
+    ))}
+</h1>
+
+<style>
+  {`
+    @keyframes shine {
+      0% { background-position: -200% 0; }
+      100% { background-position: 200% 0; }
+    }
+    .animate-shine {
+      background-size: 200% auto;
+      animation: shine 2s linear infinite;
+    }
+  `}
+</style>
+
 
         {/* Subtitle */}
         <motion.p
@@ -58,19 +95,23 @@ export function HeroSectionOne() {
           transition={{ duration: 0.3, delay: 1 }}
           className="relative z-10 mt-8 flex flex-col sm:flex-row items-center justify-center gap-4 w-full"
         >
-          <button className="w-full sm:w-48 transform rounded-lg bg-black px-6 py-3 font-medium text-white transition-all duration-300 hover:-translate-y-0.5 hover:bg-gray-800 dark:bg-white dark:text-black dark:hover:bg-gray-200">
-            Explore Now
-          </button>
-          <button className="w-full sm:w-48 transform rounded-lg border border-gray-300 bg-white px-6 py-3 font-medium text-black transition-all duration-300 hover:-translate-y-0.5 hover:bg-gray-100 dark:border-gray-700 dark:bg-black dark:text-white dark:hover:bg-gray-900">
-            Contact Support
-          </button>
+          <Link to={"/projects"}>
+            <button className="w-full sm:w-48 transform rounded-lg bg-black px-6 py-3 font-medium text-white transition-all duration-300 hover:-translate-y-0.5 hover:bg-gray-800 dark:bg-white dark:text-black dark:hover:bg-gray-200">
+              Explore Now
+            </button>
+          </Link>
+          <Link to={"/contact"}>
+            <button className="w-full sm:w-48 transform rounded-lg border border-gray-300 bg-white px-6 py-3 font-medium text-black transition-all duration-300 hover:-translate-y-0.5 hover:bg-gray-100 dark:border-gray-700 dark:bg-black dark:text-white dark:hover:bg-gray-900">
+              Contact Support
+            </button>
+          </Link>
         </motion.div>
 
-        {/* Preview Image */}
-        <motion.div
+       
+        {/* <motion.div
           initial={{ opacity: 0, y: 10 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.3, delay: 1.2 }}
+          transition={{ duration: 0.5, delay: 1.4 }}
           className="relative z-10 mt-12 sm:mt-20 rounded-3xl border border-neutral-200 bg-neutral-100 p-2 sm:p-4 shadow-md dark:border-neutral-800 dark:bg-neutral-900"
         >
           <div className="w-full overflow-hidden rounded-xl border border-gray-200 bg-neutral-100 ">
@@ -80,6 +121,22 @@ export function HeroSectionOne() {
               className="h-[400px] w-full object-cover"
               height={1000}
               width={1000}
+            />
+          </div>
+        </motion.div> */}
+        <motion.div
+          initial={{ opacity: 0, y: 10 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5, delay: 1.4 }}
+          className="relative z-10 mt-12 sm:mt-20 rounded-3xl border border-neutral-200 bg-neutral-100 p-2 sm:p-4 shadow-md dark:border-neutral-800 dark:bg-neutral-900 hover:scale-105 transition-transform duration-300"
+        >
+          <div className="w-full overflow-hidden rounded-xl border border-gray-200 bg-neutral-100 ">
+            <img
+              src="/images/animated_pic.png"
+              alt="Landing page preview"
+              className="h-[400px] w-full object-cover"
+              height={400}
+              width={800}
             />
           </div>
         </motion.div>

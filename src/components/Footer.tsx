@@ -3,10 +3,10 @@ import { Github, Linkedin, Mail, Twitter } from "lucide-react";
 
 export default function Footer() {
   const socials = [
-    { icon: Github, link: "https://github.com/yourprofile" },
-    { icon: Linkedin, link: "https://linkedin.com/in/yourprofile" },
+    { icon: Github, link: "https://github.com/tannuv25" },
+    { icon: Linkedin, link: "https://linkedin.com/in/tannu-verma-460282229" },
     { icon: Twitter, link: "https://twitter.com/yourprofile" },
-    { icon: Mail, link: "mailto:your@email.com" },
+    { icon: Mail, link: "mailto:vermataashi@email.com" },
   ];
 
   return (
@@ -33,13 +33,13 @@ export default function Footer() {
           className="flex flex-col items-center sm:items-start gap-2"
         >
           <h2 className="text-lg font-semibold mb-2">Quick Links</h2>
-          <a href="#about" className="hover:text-purple-500 transition">
+          <a href="/about" className="hover:text-purple-500 transition">
             About
           </a>
-          <a href="#projects" className="hover:text-purple-500 transition">
+          <a href="/projects" className="hover:text-purple-500 transition">
             Projects
           </a>
-          <a href="#contact" className="hover:text-purple-500 transition">
+          <a href="/contact" className="hover:text-purple-500 transition">
             Contact
           </a>
         </motion.div>
