@@ -12,7 +12,7 @@ const Navbar = () => {
   ];
 
   return (
-    <nav className="fixed w-full shadow-2xl z-50 bg-white border-b border-pink-100 top-0">
+    <nav className="fixed w-full shadow-lg z-50 bg-white border-b border-purple-100 top-0">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
@@ -50,23 +50,25 @@ const Navbar = () => {
       </div>
 
       {/* Mobile Dropdown */}
-      {isOpen && (
-        <div className="md:hidden bg-white shadow-lg px-6 py-4 space-y-4 animate-slide-down">
-          {navLinks.map((link) => (
-            <a
-              key={link.name}
-              href={link.href}
-              className="block text-gray-700 hover:text-purple-600 font-medium transition-colors duration-300"
-              onClick={() => setIsOpen(false)} // close after click
-            >
-              {link.name}
-            </a>
-          ))}
-          <button className="w-full bg-purple-600 hover:bg-purple-700 text-white px-5 py-2 rounded-full font-semibold shadow-md transition-transform transform hover:scale-105">
-            Get Started
-          </button>
-        </div>
-      )}
+      <div
+        className={`md:hidden bg-white shadow-lg px-6 py-4 space-y-4 transform transition-all duration-300 ease-in-out ${
+          isOpen ? "max-h-96 opacity-100" : "max-h-0 opacity-0 overflow-hidden"
+        }`}
+      >
+        {navLinks.map((link) => (
+          <a
+            key={link.name}
+            href={link.href}
+            className="block text-gray-700 hover:text-purple-600 font-medium transition-colors duration-300"
+            onClick={() => setIsOpen(false)} // close after click
+          >
+            {link.name}
+          </a>
+        ))}
+        <button className="w-full bg-purple-600 hover:bg-purple-700 text-white px-5 py-2 rounded-full font-semibold shadow-md transition-transform transform hover:scale-105">
+          Get Started
+        </button>
+      </div>
     </nav>
   );
 };
