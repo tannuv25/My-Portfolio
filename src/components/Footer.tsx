@@ -4,9 +4,9 @@ import { Github, Linkedin, Mail, Twitter } from "lucide-react";
 export default function Footer() {
   const socials = [
     { icon: Github, link: "https://github.com/tannuv25" },
-    { icon: Linkedin, link: "https://linkedin.com/in/tannu-verma-460282229" },
+    { icon: Linkedin, link: "https://www.linkedin.com/in/tannu-verma-460282229/" },
     { icon: Twitter, link: "https://twitter.com/yourprofile" },
-    { icon: Mail, link: "mailto:vermataashi@email.com" },
+    { icon: Mail, link: "mailto:vermataashi@mail.com" },
   ];
 
   return (
@@ -25,7 +25,7 @@ export default function Footer() {
           </p>
         </motion.div>
 
-        {/* Links */}
+        {/* Quick Links */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
@@ -33,13 +33,13 @@ export default function Footer() {
           className="flex flex-col items-center sm:items-start gap-2"
         >
           <h2 className="text-lg font-semibold mb-2">Quick Links</h2>
-          <a href="/about" className="hover:text-purple-500 transition">
+          <a href="/about" className="hover:text-purple-500 transition cursor-pointer">
             About
           </a>
-          <a href="/projects" className="hover:text-purple-500 transition">
+          <a href="/projects" className="hover:text-purple-500 transition cursor-pointer">
             Projects
           </a>
-          <a href="/contact" className="hover:text-purple-500 transition">
+          <a href="/contact" className="hover:text-purple-500 transition cursor-pointer">
             Contact
           </a>
         </motion.div>
@@ -61,7 +61,7 @@ export default function Footer() {
                 rel="noopener noreferrer"
                 whileHover={{ scale: 1.2, rotate: 8 }}
                 whileTap={{ scale: 0.9 }}
-                className="p-2 rounded-full bg-purple-100 hover:bg-purple-300 transition"
+                className="p-2 rounded-full bg-purple-100 hover:bg-purple-300 transition cursor-pointer"
               >
                 <Icon className="w-6 h-6" />
               </motion.a>

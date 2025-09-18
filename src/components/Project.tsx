@@ -17,8 +17,16 @@ const projects: Project[] = [
     description:
       "A modern and responsive personal portfolio built with React, Tailwind, and Framer Motion.",
     tech: ["React", "TailwindCSS", "Framer Motion"],
-    github: "https://github.com/username/portfolio",
-    demo: "https://portfolio.com",
+    github: "https://github.com/tannuv25/My-Portfolio",
+    demo: "https://tannuuv-y98m.vercel.app/",
+  },
+  {
+    title: "Taxi booking Website",
+    description:
+      "A modern taxi booking platform that connects passengers with drivers in real-time.",
+    tech: ["React", "TailwindCSS", "Typescript", "FastAPI", "MongoDB", "Redis", "Socket.io"],
+    github: "https://github.com/username/store",
+    demo: "https://store.com",
   },
   {
     title: "E-Commerce Store",
@@ -32,6 +40,20 @@ const projects: Project[] = [
     title: "Chat Application",
     description: "Real-time chat app with authentication and group chats.",
     tech: ["Node.js", "Socket.io", "Express"],
+    github: "https://github.com/username/chatapp",
+    demo: "https://chatapp.com",
+  },
+  {
+    title: "BabyCare",
+    description: "Developed a fully functional Play School website",
+    tech: ["Node.js", "Express", "MongoDB", "Multer", "handlebars"],
+    github: "https://github.com/username/chatapp",
+    demo: "https://chatapp.com",
+  },
+  {
+    title: "NewsApp",
+    description: "Dynamic and responsive news application.",
+    tech: ["React.js","Bootstrap", "RestAPI"],
     github: "https://github.com/username/chatapp",
     demo: "https://chatapp.com",
   },

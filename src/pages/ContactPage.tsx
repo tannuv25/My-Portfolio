@@ -1,5 +1,5 @@
 import Footer from "../components/Footer";
-import Contact from "../components/Herosection2";
+import Contact from "../components/Contact";
 import Navbar from "../components/Navbar";
 
 
