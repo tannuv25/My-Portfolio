@@ -68,7 +68,7 @@ export default function Contact() {
           <div className="flex items-center gap-3">
             <MapPin className="text-purple-600 w-5 h-5" />
             <span className="text-sm sm:text-base font-medium text-gray-800">
-              Your City, Country
+              Noida, India
             </span>
           </div>
         </div>
