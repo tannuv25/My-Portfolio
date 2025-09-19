@@ -1,19 +1,35 @@
 import { useState } from "react";
-import { Mail, Phone, MapPin } from "lucide-react";
+import { Mail, MapPin } from "lucide-react";
+
+import { collection, addDoc } from "firebase/firestore";
+import { db } from "../firebase";
 
 export default function Contact() {
   const [formData, setFormData] = useState({ name: "", email: "", message: "" });
   const [sent, setSent] = useState(false);
 
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+  const handleChange = (
+    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
+  ) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
   };
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    setSent(true);
-    setTimeout(() => setSent(false), 2500); // show “sent” for 2.5s
-    setFormData({ name: "", email: "", message: "" });
+
+    try {
+      await addDoc(collection(db, "contacts"), {
+        ...formData,
+        createdAt: new Date(),
+      });
+
+      setSent(true);
+      setTimeout(() => setSent(false), 2500); // show “sent” for 2.5s
+      setFormData({ name: "", email: "", message: "" });
+    } catch (err) {
+      console.error("Error adding document: ", err);
+      alert("Something went wrong!");
+    }
   };
 
   return (
@@ -22,7 +38,7 @@ export default function Contact() {
       {Array.from({ length: 6 }).map((_, i) => (
         <div
           key={i}
-          className={`absolute w-8 h-8 bg-purple-200 rounded-full opacity-30 animate-bounce-slow`}
+          className="absolute w-8 h-8 bg-purple-200 rounded-full opacity-30 animate-bounce-slow"
           style={{
             top: `${Math.random() * 90}%`,
             left: `${Math.random() * 90}%`,
@@ -46,13 +62,7 @@ export default function Contact() {
           <div className="flex items-center gap-3">
             <Mail className="text-purple-600 w-5 h-5" />
             <span className="text-sm sm:text-base font-medium text-gray-800">
-              your.email@example.com
-            </span>
-          </div>
-          <div className="flex items-center gap-3">
-            <Phone className="text-purple-600 w-5 h-5" />
-            <span className="text-sm sm:text-base font-medium text-gray-800">
-              +123 456 7890
+              vermataashi@gmail.com
             </span>
           </div>
           <div className="flex items-center gap-3">
@@ -66,7 +76,7 @@ export default function Contact() {
         {/* Contact Form */}
         <form
           onSubmit={handleSubmit}
-          className="bg-white border border-purple-200 rounded-2xl shadow-lg p-6 space-y-4 hover:shadow-2xl transition-all duration-300"
+          className="relative bg-white border border-purple-200 rounded-2xl shadow-lg p-6 space-y-4 hover:shadow-2xl transition-all duration-300"
         >
           <input
             type="text"
