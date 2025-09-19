@@ -7,11 +7,13 @@ import TechStack from "../components/Techstack";
 
 export default function AboutPage(){
     return <>
+<div className="overflow-hidden">
     <Navbar/>
     <About/>
     <Experience/>
     <TechStack/>
     <Education/>
     <Footer/>
+</div>
     </>
 }

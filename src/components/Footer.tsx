@@ -87,7 +87,7 @@ export default function Footer() {
           scale: [1, 1.1, 1],
         }}
         transition={{ repeat: Infinity, duration: 6 }}
-        className="absolute -bottom-20 -left-20 w-72 h-72 bg-purple-500 rounded-full blur-3xl opacity-30"
+        className="absolute w-72 h-72 bg-purple-500 rounded-full blur-3xl opacity-30"
       />
       <motion.div
         animate={{
@@ -95,7 +95,7 @@ export default function Footer() {
           scale: [1, 1.15, 1],
         }}
         transition={{ repeat: Infinity, duration: 8 }}
-        className="absolute -top-20 -right-20 w-80 h-80 bg-purple-400 rounded-full blur-3xl opacity-30"
+        className="absolute  w-80 h-80 bg-purple-400 rounded-full blur-3xl opacity-30"
       />
     </footer>
   );

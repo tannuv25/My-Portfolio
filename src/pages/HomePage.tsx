@@ -4,11 +4,12 @@ import Footer from "../components/Footer";
 import { HeroSectionOne } from "../components/Hero";
 import Testimonials from "../components/Testimonial";
 
-export default function HomePage(){
+export default function HomePage() {
     return <>
-    <Navbar/>   
-<HeroSectionOne/>
-<Testimonials/>
- <Footer/>
+        <div className="overflow-hidden">    <Navbar />
+            <HeroSectionOne />
+            <Testimonials />
+
+            <Footer /></div>
     </>
 }

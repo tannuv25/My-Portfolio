@@ -6,9 +6,11 @@ import Navbar from "../components/Navbar";
 export default function ContactPage() {
   return (
     <>
-    <Navbar/>
+<div className="overflow-hidden">
+      <Navbar/>
     <Contact/>
     <Footer/>
+</div>
     </>
   )
 }

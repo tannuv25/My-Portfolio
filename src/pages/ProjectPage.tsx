@@ -5,9 +5,9 @@ import Projects from "../components/Project";
 export default function ProjectPage() {
   return (
     <>
-    <Navbar/>
+<div className="overflow-hidden">    <Navbar/>
     <Projects/>
-    <Footer/>
+    <Footer/></div>
     </>
   )
 }
