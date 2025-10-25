@@ -54,8 +54,8 @@ export default function TechStack() {
             </Typography>
 
             <Grid container spacing={4} justifyContent="center" sx={{
-                maxWidth: "90%",   // 🔹 reduces grid width a bit
-                margin: "0 auto", // 🔹 centers with left & right margin
+                maxWidth: "90%",   
+                margin: "0 auto", 
             }}>
                 {techStacks.map((tech, i) => (
                     <Grid key={tech.name} size={{ xs: 12, sm: 6, md: 3 }}>
