@@ -18,7 +18,7 @@ const projects: Project[] = [
       "A modern and responsive personal portfolio built with React, Tailwind, and Framer Motion.",
     tech: ["React", "TailwindCSS", "Framer Motion"],
     github: "https://github.com/tannuv25/My-Portfolio",
-    demo: "https://tannuuv-y98m.vercel.app/",
+    demo: "https://tannuuv.vercel.app/",
   },
   {
     title: "Taxi booking Website",
@@ -33,8 +33,8 @@ const projects: Project[] = [
     description:
       "Full-stack e-commerce platform with payment integration and product management dashboard.",
     tech: ["Next.js", "Stripe", "MongoDB"],
-    github: "https://github.com/username/store",
-    demo: "https://store.com",
+    github: "https://github.com/tannuv25/E-com",
+    demo: "https://shopkaroecom.vercel.app/",
   },
   {
     title: "Chat Application",
