@@ -31,8 +31,8 @@ const projects: Project[] = [
   {
     title: "E-Commerce Store",
     description:
-      "Full-stack e-commerce platform with payment integration and product management dashboard.",
-    tech: ["Next.js", "Stripe", "MongoDB"],
+      "Full-stack e-commerce platform and product management dashboard.",
+    tech: ["React.js", "Bootstrap", "Node.js", "Express", "MongoDB"],
     github: "https://github.com/tannuv25/E-com",
     demo: "https://shopkaroecom.vercel.app/",
   },
