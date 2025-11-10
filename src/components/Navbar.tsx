@@ -2,7 +2,7 @@
 import { useState } from "react";
 import { Menu, X } from "lucide-react";
 import { Link } from "react-router-dom";
-import DarkModeToggle from "./DarkModeToggle";
+// import DarkModeToggle from "./DarkModeToggle";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -32,7 +32,7 @@ const Navbar = () => {
                 {link.name}
               </Link>
             ))}
-            <DarkModeToggle/>
+            {/* <DarkModeToggle/> */}
             {/* View Resume Button (opens in browser) */}
             <a
               href="https://drive.google.com/file/d/1f2B9dJDmYc6Mze46tVklgqBf3PYeQv0w/view?usp=drive_link"
