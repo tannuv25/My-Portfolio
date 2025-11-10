@@ -21,6 +21,14 @@ const projects: Project[] = [
     demo: "https://tannuuv.vercel.app/",
   },
   {
+    title: "Vitals360",
+    description:
+      "A full-stack hospital web application built with React.js and Node.js, Express.js with MongoDB. It features a user-friendly patient portal for booking and viewing services.",
+    tech: ["React.js", "TailwindCSS", "JavaScript", "Node.js", "Express.js", "MongoDB"],
+    github: "https://github.com/tannuv25/hospitalwebfrontend",
+    demo: "https://vitals360.vercel.app/",
+  },
+  {
     title: "Taxi booking Website",
     description:
       "A modern taxi booking platform that connects passengers with drivers in real-time.",
@@ -29,7 +37,7 @@ const projects: Project[] = [
     demo: "https://store.com",
   },
   {
-    title: "E-Commerce Store",
+    title: "ShopKaro E-commerce",
     description:
       "Full-stack e-commerce platform and product management dashboard.",
     tech: ["React.js", "Bootstrap", "Node.js", "Express", "MongoDB"],
