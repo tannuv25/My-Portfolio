@@ -35,7 +35,7 @@ const Navbar = () => {
             <DarkModeToggle/>
             {/* View Resume Button (opens in browser) */}
             <a
-              href="/resume/tannucv.pdf"
+              href="https://drive.google.com/file/d/1f2B9dJDmYc6Mze46tVklgqBf3PYeQv0w/view?usp=drive_link"
               target="_blank"
               rel="noopener noreferrer"
               className="px-4 py-2 bg-purple-600 text-white rounded-lg shadow hover:bg-purple-700 transition"
@@ -71,7 +71,7 @@ const Navbar = () => {
 
           {/* View Resume in Mobile Menu */}
           <a
-            href="/resume/tannucv.pdf"
+            href="https://drive.google.com/file/d/1f2B9dJDmYc6Mze46tVklgqBf3PYeQv0w/view?usp=drive_link"
             target="_blank"
             rel="noopener noreferrer"
             className="block px-4 py-2 bg-purple-600 text-white rounded-lg shadow hover:bg-purple-700 transition text-center"
