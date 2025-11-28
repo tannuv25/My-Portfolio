@@ -33,8 +33,8 @@ const projects: Project[] = [
     description:
       "A modern taxi booking platform that connects passengers with drivers in real-time.",
     tech: ["React", "TailwindCSS", "Typescript", "FastAPI", "MongoDB", "Redis", "Socket.io"],
-    github: "https://github.com/username/store",
-    demo: "https://store.com",
+    github: "https://github.com/tannuv25/RideNow_fe",
+    demo: "https://ride-now-green.vercel.app/",
   },
   {
     title: "ShopKaro E-commerce",
