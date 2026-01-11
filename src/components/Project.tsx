@@ -12,14 +12,7 @@ interface Project {
 }
 
 const projects: Project[] = [
-  {
-    title: "Portfolio Website",
-    description:
-      "A modern and responsive personal portfolio built with React, Tailwind, and Framer Motion.",
-    tech: ["React", "TailwindCSS", "Framer Motion"],
-    github: "https://github.com/tannuv25/My-Portfolio",
-    demo: "https://tannuuv.vercel.app/",
-  },
+  
   {
     title: "Vitals360",
     description:
@@ -64,6 +57,14 @@ const projects: Project[] = [
     tech: ["React.js","Bootstrap", "RestAPI"],
     github: "https://github.com/username/chatapp",
     demo: "https://chatapp.com",
+  },
+  {
+    title: "Portfolio Website",
+    description:
+      "A modern and responsive personal portfolio built with React, Tailwind, and Framer Motion.",
+    tech: ["React", "TailwindCSS", "Framer Motion"],
+    github: "https://github.com/tannuv25/My-Portfolio",
+    demo: "https://tannuuv.vercel.app/",
   },
 ];
 

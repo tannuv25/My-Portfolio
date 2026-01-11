@@ -40,7 +40,7 @@ const Navbar = () => {
               rel="noopener noreferrer"
               className="px-4 py-2 bg-purple-600 text-white rounded-lg shadow hover:bg-purple-700 transition"
             >
-              Download Resume
+               Resume
             </a>
           </div>
 
@@ -76,7 +76,7 @@ const Navbar = () => {
             rel="noopener noreferrer"
             className="block px-4 py-2 bg-purple-600 text-white rounded-lg shadow hover:bg-purple-700 transition text-center"
           >
-            Download Resume
+            Resume
           </a>
         </div>
       )}
