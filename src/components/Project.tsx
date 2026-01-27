@@ -12,6 +12,14 @@ interface Project {
 }
 
 const projects: Project[] = [
+
+  {
+    title: "Chat Application",
+    description: "Real-time chat app with authentication and group chats.",
+    tech: ["React.js", "TailwindCSS", "Node.js", "Socket.io", "Express", "MongoDB"],
+    github: "https://github.com/tannuv25/chatify",
+    demo: "https://chatify-eight-alpha.vercel.app/",
+  },
   
   {
     title: "Vitals360",
@@ -37,13 +45,7 @@ const projects: Project[] = [
     github: "https://github.com/tannuv25/E-com",
     demo: "https://shopkaroecom.vercel.app/",
   },
-  {
-    title: "Chat Application",
-    description: "Real-time chat app with authentication and group chats.",
-    tech: ["Node.js", "Socket.io", "Express"],
-    github: "https://github.com/username/chatapp",
-    demo: "https://chatapp.com",
-  },
+  
   {
     title: "BabyCare",
     description: "Developed a fully functional Play School website",
