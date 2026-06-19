@@ -1,99 +1,85 @@
-// import { motion } from "framer-motion";
-
-// export default function About() {
-//   return (
-//     <div className="min-h-screen bg-white text-gray-900 flex flex-col items-center py-12 px-4 sm:px-6 lg:px-8">
-//       {/* Heading */}
-//       <h1 className="text-3xl sm:text-4xl font-bold text-purple-700 mb-4 sm:mb-6 text-center">
-//         About Me
-//       </h1>
-//       <p className="text-base sm:text-lg text-gray-600 mb-10 sm:mb-12 max-w-2xl text-center">
-//         Here's a little about who I am, what I do, and what inspires me.
-//       </p>
-
-//       {/* Content Grid */}
-//       <div className="grid grid-cols-1 md:grid-cols-2 gap-8 sm:gap-10 max-w-5xl w-full">
-//         {/* Profile Section */}
-//         <motion.div
-//           initial={{ opacity: 0, y: 20 }}
-//           animate={{ opacity: 1, y: 0 }}
-//           transition={{ duration: 0.5 }}
-//           className="bg-purple-50 rounded-2xl shadow-lg p-6 sm:p-8 flex flex-col items-center text-center"
-//         >
-//           <img
-//             src="/images/profile_pic.png"
-//             alt="Profile"
-//             className="w-32 h-32 sm:w-40 sm:h-40 rounded-full object-cover border-4 border-purple-500 mb-4 sm:mb-6"
-//           />
-//           <h2 className="text-xl sm:text-2xl font-semibold text-purple-700 mb-2">
-//             Tannu Verma
-//           </h2>
-//           <p className="text-gray-600 text-sm sm:text-base">
-//             Software Developer | Backend Developer
-//           </p>
-//         </motion.div>
-
-//         {/* Bio Section */}
-//         <motion.div
-//           initial={{ opacity: 0, y: 20 }}
-//           animate={{ opacity: 1, y: 0 }}
-//           transition={{ duration: 0.7 }}
-//           className="bg-white border border-purple-200 rounded-2xl shadow-lg p-6 sm:p-8 space-y-4"
-//         >
-//           <p className="text-gray-700 text-sm sm:text-base leading-relaxed">
-//             I’m a Full Stack Developer passionate about building scalable web apps with React, Redux Toolkit, FastAPI, and MongoDB. Skilled in both frontend and backend, I enjoy crafting clean APIs, smooth user interfaces, and efficient solutions.
-//           </p>
-//           <p className="text-gray-700 text-sm sm:text-base leading-relaxed">
-//             With internship experience and a strong problem-solving mindset, I aim to deliver impactful, high-performance applications that make a real difference.
-//           </p>
-//           <p className="text-gray-700 text-sm sm:text-base leading-relaxed">
-//             When I'm not coding, you'll find me exploring new design trends,
-//             reading, or enjoying a good coffee.
-//           </p>
-//         </motion.div>
-//       </div>
-//     </div>
-//   );
-// }
-
 import { motion } from "framer-motion";
 import { Briefcase, Code } from "lucide-react";
 
 export default function About() {
   return (
-    <div className="min-h-screen bg-white text-gray-900 flex flex-col items-center py-12 px-4 sm:px-6 lg:px-8">
+    <section className="min-h-screen bg-white text-gray-900 flex flex-col items-center py-16 px-4 sm:px-6 lg:px-8">
       {/* Heading */}
-      <h1 className="text-3xl sm:text-4xl font-bold text-purple-700 mb-4 sm:mb-6 text-center">
-        About Me
-      </h1>
-      <p className="text-base sm:text-lg text-gray-600 mb-10 sm:mb-12 max-w-2xl text-center">
-        Here's a little about who I am, what I do, and what inspires me.
-      </p>
+      <motion.div
+        initial={{ opacity: 0, y: -15 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.5 }}
+        className="text-center mb-12"
+      >
+        <h1 className="text-4xl sm:text-5xl font-bold bg-gradient-to-r from-purple-600 to-pink-500 bg-clip-text text-transparent">
+          About Me
+        </h1>
 
-      {/* Content Grid */}
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-8 sm:gap-10 max-w-5xl w-full">
-        {/* Profile Section */}
+        <p className="mt-4 text-gray-500 text-base sm:text-lg max-w-2xl mx-auto">
+          Building meaningful products through code, creativity, and
+          continuous learning.
+        </p>
+      </motion.div>
+
+      {/* Main Grid */}
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl w-full">
+        
+        {/* Left Card */}
         <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
+          initial={{ opacity: 0, x: -25 }}
+          animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.5 }}
-          whileHover={{ scale: 1.05 }}
-          className="bg-gradient-to-br from-purple-50 to-purple-100 rounded-2xl shadow-xl p-6 sm:p-8 flex flex-col items-center text-center border border-purple-200"
+          whileHover={{ y: -5 }}
+          className="
+            relative
+            overflow-hidden
+            rounded-[32px]
+            shadow-2xl
+            p-8
+            flex
+            flex-col
+            items-center
+            justify-center
+            text-center
+            bg-gradient-to-br
+            from-purple-300
+            via-violet-400
+            to-pink-500
+          "
         >
+          {/* Decorative Circles */}
+          <div className="absolute -top-16 -right-16 w-48 h-48 bg-white/10 rounded-full"></div>
+          <div className="absolute -bottom-12 -left-12 w-40 h-40 bg-white/10 rounded-full"></div>
+
+          {/* Profile Image */}
           <div className="relative">
-            <div className="absolute inset-0 rounded-full bg-gradient-to-r from-purple-400 to-purple-600 blur-md opacity-30"></div>
-            <img
+            <div className="absolute inset-0 bg-white/20 blur-xl rounded-full scale-110"></div>
+
+            <motion.img
+              whileHover={{ scale: 1.05, rotate: 2 }}
+              transition={{ duration: 0.3 }}
               src="/images/profile_pic.png"
-              alt="Profile"
-              className="relative w-32 h-32 sm:w-40 sm:h-40 rounded-full object-cover border-4 border-purple-500 shadow-lg"
+              alt="Tannu Verma"
+              className="
+                relative
+                w-40
+                h-40
+                rounded-full
+                object-cover
+                border-4
+                border-white/40
+                shadow-2xl
+              "
             />
           </div>
 
-          <h2 className="text-2xl sm:text-3xl font-extrabold bg-gradient-to-r from-purple-600 to-purple-400 bg-clip-text text-transparent mt-6">
+          {/* Name */}
+          <h2 className="mt-6 text-4xl sm:text-5xl font-bold text-white">
             Tannu Verma
           </h2>
 
-          <div className="flex flex-col sm:flex-row gap-2 sm:gap-4 mt-3 text-gray-700 text-sm sm:text-base font-medium">
+          {/* Roles */}
+          <div className="flex flex-col sm:flex-row gap-2 sm:gap-4 mt-3 text-white text-sm sm:text-base font-medium">
             <span className="flex items-center gap-1">
               <Briefcase size={18} className="text-purple-600" /> Software Developer
             </span>
@@ -104,24 +90,40 @@ export default function About() {
           </div>
         </motion.div>
 
-        {/* Bio Section */}
+        {/* Right Card */}
         <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
+          initial={{ opacity: 0, x: 25 }}
+          animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.7 }}
-          className="bg-white border border-purple-200 rounded-2xl shadow-lg p-6 sm:p-8 space-y-4"
+          className="bg-white border border-purple-100 rounded-3xl shadow-xl p-8"
         >
-          <p className="text-gray-700 text-sm sm:text-base leading-relaxed">
-            I’m a <span className="font-semibold text-purple-600">Full Stack Developer</span> passionate about building scalable web apps with React, Redux Toolkit, FastAPI, and MongoDB. Skilled in both frontend and backend, I enjoy crafting clean APIs, smooth user interfaces, and efficient solutions.
-          </p>
-          <p className="text-gray-700 text-sm sm:text-base leading-relaxed">
-            With internship experience and a strong problem-solving mindset, I aim to deliver impactful, high-performance applications that make a real difference.
-          </p>
-          <p className="text-gray-700 text-sm sm:text-base leading-relaxed italic">
-            When I'm not coding, you'll find me exploring new design trends, reading, or enjoying a good coffee ☕.
-          </p>
+          <div className="space-y-5">
+           <p className="text-gray-700 text-sm sm:text-base leading-relaxed">
+  Hi, I'm Tannu — a Full Stack Developer passionate about building
+  products that solve real-world problems and create meaningful user
+  experiences.
+</p>
+
+<p className="text-gray-700 text-sm sm:text-base leading-relaxed">
+  Over the past year, I've worked on diverse web applications, taking
+  ideas from planning and system design to development and deployment.
+  I enjoy transforming complex requirements into clean, scalable
+  solutions while maintaining a strong focus on quality and user needs.
+</p>
+
+<p className="text-gray-700 text-sm sm:text-base leading-relaxed">
+  What drives me most is the opportunity to learn, improve, and create.
+  Every project teaches me something new, and every challenge pushes me
+  to think differently. I'm constantly exploring better ways to build,
+  lead, and grow as an engineer.
+</p>
+
+<p className="text-gray-700 text-sm sm:text-base leading-relaxed italic">
+  Still learning. Still building. Just getting started. ✨
+</p>          </div>
         </motion.div>
+
       </div>
-    </div>
+    </section>
   );
 }

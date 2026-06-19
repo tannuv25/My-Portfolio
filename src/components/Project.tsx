@@ -18,7 +18,7 @@ const projects: Project[] = [
     description: "A full-stack Smart Library Management System with role-based authentication (Admin, Librarian, User), secure JWT authorization, book inventory management, borrow-return workflow, overdue calculation, and an analytics dashboard with pagination and search.",
     tech: ["React.js", "TailwindCSS", "Node.js", "Express", "MongoDB"],
     github: "https://github.com/tannuv25/library_sys",
-    demo: "https://chatify-eight-alpha.vercel.app/",
+    demo: "https://library-sys-coral.vercel.app/",
   },
   {
     title: "Chat Application",

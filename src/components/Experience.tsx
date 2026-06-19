@@ -9,9 +9,16 @@ interface ExperienceItem {
 
 const experiences: ExperienceItem[] = [
   {
+    role: "Full Stack Developer",
+    company: "Ank Digital Media",
+    duration: "March 2026 – Present",
+    description:
+      "Results-driven Full Stack Developer experienced in building and maintaining production-ready applications using MERN stack. Strong background in developing business-focused solutions, integrating third-party services, and delivering reliable, scalable software products from concept to deployment."
+  },
+  {
     role: "Software Developer Intern",
     company: "Fourbrick Technology Pvt Ltd",
-    duration: "June 2025 – Present",
+    duration: "June 2025 – Sept 2025",
     description:
       "Worked on Python FastAPI backend, MongoDB, and React with Redux Toolkit to build scalable web applications.",
   },
