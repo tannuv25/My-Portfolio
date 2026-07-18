@@ -34,7 +34,7 @@ const projects: Project[] = [
       "A full-stack hospital web application built with React.js and Node.js, Express.js with MongoDB. It features a user-friendly patient portal for booking and viewing services.",
     tech: ["React.js", "TailwindCSS", "JavaScript", "Node.js", "Express.js", "MongoDB"],
     github: "https://github.com/tannuv25/hospitalwebfrontend",
-    demo: "https://vitals360.vercel.app/",
+    demo: "https://vitals360.onrender.com/",
   },
   {
     title: "Taxi booking Website",
