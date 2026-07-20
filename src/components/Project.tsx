@@ -64,8 +64,8 @@ const projects: Project[] = [
     title: "NewsApp",
     description: "Dynamic and responsive news application.",
     tech: ["React.js","Bootstrap", "RestAPI"],
-    github: "https://github.com/username/chatapp",
-    demo: "https://chatapp.com",
+    github: "https://github.com/tannuv25/NewsWeb",
+    demo: "https://newsweb.com",
   },
   {
     title: "Portfolio Website",
