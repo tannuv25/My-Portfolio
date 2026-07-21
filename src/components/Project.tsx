@@ -68,6 +68,14 @@ const projects: Project[] = [
     demo: "https://newsweb.com",
   },
   {
+    title: "Snake Game",
+    description:
+      "A classic Snake Game built using HTML, CSS, and JavaScript with smooth controls and score tracking.",
+    tech: ["HTML", "CSS", "JavaScript"],
+    github: "https://github.com/tannuv25/Snake-game",
+    demo: "https://tannuv25.github.io/Snake-game/",
+  },
+  {
     title: "Portfolio Website",
     description:
       "A modern and responsive personal portfolio built with React, Tailwind, and Framer Motion.",
