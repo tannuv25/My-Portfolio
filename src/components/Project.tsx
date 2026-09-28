@@ -12,6 +12,13 @@ interface Project {
 }
 
 const projects: Project[] = [
+  {
+  title: "भारत Bulletin",
+  description: "A bilingual Hindi-English news platform delivering live news across India, World, Politics, Business, Technology, Sports, and Health with a responsive editorial interface.",
+  tech: ["React.js", "TypeScript", "Node.js", "Express.js", "REST API", "NewsData API"],
+  github: "https://github.com/tannuv25/NewsWeb",
+  demo: "https://bharatbulletin-s3lx.onrender.com/",
+},
 
   {
     title: "Smart Library",
@@ -60,13 +67,7 @@ const projects: Project[] = [
     github: "https://github.com/username/chatapp",
     demo: "https://chatapp.com",
   },
-  {
-    title: "NewsApp",
-    description: "Dynamic and responsive news application.",
-    tech: ["React.js","Bootstrap", "RestAPI"],
-    github: "https://github.com/tannuv25/NewsWeb",
-    demo: "https://newsweb.com",
-  },
+
   {
     title: "Snake Game",
     description:
