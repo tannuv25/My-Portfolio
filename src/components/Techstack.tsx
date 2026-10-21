@@ -4,29 +4,111 @@ import Typography from "@mui/material/Typography";
 import Paper from "@mui/material/Paper";
 import Grid from "@mui/material/Grid";
 
+
 const techStacks = [
-    // Core
-    { name: "React", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" },
-    { name: "JavaScript", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" },
-    { name: "Node.js", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" },
-    { name: "Express.js", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg" },
+    // Frontend
+    {
+        name: "React",
+        logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg",
+    },
+    {
+        name: "Next.js",
+        logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg",
+    },
+    {
+        name: "JavaScript",
+        logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg",
+    },
+    {
+        name: "TypeScript",
+        logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg",
+    },
+    {
+        name: "HTML5",
+        logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg",
+    },
+    {
+        name: "CSS3",
+        logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg",
+    },
+    {
+        name: "Tailwind CSS",
+        logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-original.svg",
+    },
 
-    // Backend / APIs
-    { name: "Python", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" },
-    { name: "FastAPI", logo: "https://fastapi.tiangolo.com/img/logo-margin/logo-teal.png" },
-    { name: "JWT", logo: "https://jwt.io/img/pic_logo.svg" },
+    // Backend & APIs
+    {
+        name: "Node.js",
+        logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg",
+    },
+    {
+        name: "Express.js",
+        logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg",
+    },
+    {
+        name: "Python",
+        logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg",
+    },
+    {
+        name: "FastAPI",
+        logo: "https://fastapi.tiangolo.com/img/logo-margin/logo-teal.png",
+    },
+    {
+        name: "JWT",
+        logo: "https://jwt.io/img/pic_logo.svg",
+    },
+    {
+        name: "Socket.IO",
+        logo: "https://socket.io/images/logo.svg",
+    },
 
-    // Database
-    { name: "MongoDB", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg" },
+    // Database & Caching
+    {
+        name: "MongoDB",
+        logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg",
+    },
+    {
+        name: "MySQL",
+        logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg",
+    },
+    {
+        name: "Redis",
+        logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/redis/redis-original.svg",
+    },
 
-    // Tools
-    { name: "VS Code", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg" },
-    { name: "GitHub", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" },
-    { name: "Postman", logo: "https://www.vectorlogo.zone/logos/getpostman/getpostman-icon.svg" },
+    // Tools & Platforms
+    {
+        name: "Git",
+        logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg",
+    },
+    {
+        name: "GitHub",
+        logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg",
+    },
+    {
+        name: "VS Code",
+        logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg",
+    },
+    {
+        name: "Postman",
+        logo: "https://www.vectorlogo.zone/logos/getpostman/getpostman-icon.svg",
+    },
+    {
+        name: "Vercel",
+        logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vercel/vercel-original.svg",
+    },
+    {
+        name: "Docker",
+        logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg",
+    },
 
-    // Real-time
-    { name: "Socket.io", logo: "https://socket.io/images/logo.svg" },
+    // Integrations
+    {
+        name: "Razorpay",
+        logo: "https://cdn.simpleicons.org/razorpay/0C2451",
+    },
 ];
+
 
 export default function TechStack() {
     const [index, setIndex] = useState(0);

@@ -11,7 +11,7 @@ const experiences: ExperienceItem[] = [
   {
     role: "Full Stack Developer",
     company: "Ank Digital Media",
-    duration: "March 2026 – Present",
+    duration: "March 2026 – August 2026",
     description:
       "Results-driven Full Stack Developer experienced in building and maintaining production-ready applications using MERN stack. Strong background in developing business-focused solutions, integrating third-party services, and delivering reliable, scalable software products from concept to deployment."
   },
